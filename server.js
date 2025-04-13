@@ -11,7 +11,7 @@ const server = http.createServer(
 
         let filePath = path.join( __dirname , 
             'public',
-            req.url === '/' ? 'three.html' : req.url
+            req.url === '/' ? 'index.html' : req.url
         );
         let extname = path.extname(filePath);
             let contentType = "text/html" ;
